@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="es"/> 
+    <meta name="distribution" content="global"/>
+    <meta name="Robots" content="all"/>
+                
+    <title>Guita divider wacho</title>
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+     <link rel="stylesheet" href="css/style.css">
+     <script type="text/javascript" src="file:///home/schiab8/Proyectos/divisorGastos/js/divisor.js"></script>
+
+
+     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Persona</th>
+                <th>Puso</th>
+                <th>Debe</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    <button type="button" class="add-person-button">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td id="total">100.00</td>
+                <td colspan="2"></td>
+            </tr>
+        </tfoot>
+        <tr>
+            <td><input class="name" type="text" value="Persona 1" onClick="this.select();"/></td>
+            <td><input class="amount" type="text" /></td>
+            <td class="debt">00.00</td>
+            <td><button class="remove-person-button">X</button></td>
+        </tr>
+    </table>
+    
+</body>
