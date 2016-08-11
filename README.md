@@ -1,2 +1,2 @@
 # divisorGastos
-mini divisor de gastos en jquery
+mini divisor de gastos con jquery, nada serio
