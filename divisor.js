@@ -21,6 +21,7 @@ function update_cells() {
     average = total/amounts.length;
 
     $("#total").text("$ "+total.toFixed(2));
+    $("#average").text("$ "+average.toFixed(2));
     
     rows.each( function() {
         var debt_amount = average - $(this).find(".amount").val();
@@ -41,7 +42,8 @@ function update_cells() {
 
 function addPerson() {
 
-    var new_row = $('<tr><td><input class="name" type="text" onClick="this.select()"/></td><td><input class="amount" type="text" /></td><td class="debt">000.00</td><td><button class="remove-person-button">X</button></td></tr>').hide();
+    var new_row = ROW.clone();
+
     new_row.appendTo($('tbody')).show(450);
     new_row.find('.amount').keyup(function(){update_cells()});
 
@@ -65,6 +67,8 @@ function removePerson(p) {
 
 
 $(document).ready(function() {
+
+    ROW = $('#copyMe').remove().removeAttr('id');
 
     $('.remove-person-button').click(function() {
         removePerson($(this).parent().parent())

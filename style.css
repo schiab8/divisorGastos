@@ -1,25 +1,46 @@
 * {
+  box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
-  color: rgba(0,0,0,0.6)
-  font-color:#131d23;
+  font-size: 1rem;
+  color:#131d23;
 }
 body {
   background-color: #e8f1f7;  
 }
 table {
+  width:80%;
+  float:center;
+  min-width:300px;
   margin-top:1.3rem;
   border-collapse: collapse;
   margin-left:auto;
   margin-right:auto;
 
 }
-th {
-  font-size:1.2rem;
-  background-color: #2274a5;
-  padding: 0.2rem 0.9rem;
-  border-radius: 0% 0% 10px 10px;
-  padding:10px;
+@media only screen and (min-width:768px){
+  table{width:50%;}
 }
+tr {
+  height:2rem;
+}
+th {
+  background-color: #2274a5;
+  padding: 0.4rem 0.9rem;
+  font-size:1.1rem;
+}
+#header-person {
+  width: 53%;
+}
+#header-amount {
+  width:20%;
+}
+#header-debt {
+  width:20%;
+}
+#header-buttons {
+  width:7%;
+}
+
 td {
   text-align:center;
   font-size: 1.1rem;
@@ -27,7 +48,7 @@ td {
   border-color: rgba(0,0,0,0.4);
 }
 td input {
-  font-size: 1.1rem;
+  width:96%;
   padding:0.3rem;
   border-width:0px;
   border-radius:5px;
@@ -40,34 +61,32 @@ td input:focus {
   background-color:rgba(0,0,0,0.2);
 }
 tr {
-  background-color:#d7e8f2;
+  background-color:rgb(217, 238, 250);
 }
 tbody tr:nth-child(odd){
-  background-color: #c7dce8;
+  background-color: rgb(192, 213, 225);
+}
+tbody tr:nth-child(last) td{
+  border-bottom: none;
 }
 tfoot tr{
-  background-color: #2274a5;
+  background-color: #3284b5;
 }
 tfoot tr td{
   text-align: right;
 }
-.remove-person-button {
+td button {
   display:inline-block;
   font-weight:bold;
   border-style:none;
   border-radius:15%;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   margin:auto;
 }
-.add-person-button {
-  display:inline-block;
-  font-weight:bold;
-  border-style:none;
-  border-radius:15%;
+.remove-person-button {
 }
-.amount {
-  width:5rem;
+.add-person-button {
 }
 .red {
   color:red;
@@ -75,4 +94,11 @@ tfoot tr td{
 .green {
   color:green;
   font-weight:bold;
+}
+#copyMe {
+  display: none;
+}
+
+tbody td input:hover {
+  box-shadow: 0px 0px 2px 1px;
 }
