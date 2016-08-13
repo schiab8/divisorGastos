@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,13 +58,13 @@
         </tfoot>
         <tr>
             <td><input class="name" type="text" value="Persona 1" onClick="this.select();"/></td>
-            <td><input class="amount" type="text" /></td>
+            <td><input class="amount" type="number" pattern="[0-9]*" /></td>
             <td class="debt">00.00</td>
             <td><button class="remove-person-button"><i class="fa fa-times"></i></button></td>
         </tr>
         <tr id="copyMe">
             <td><input class="name" type="text" value="" onClick="this.select();"/></td>
-            <td><input class="amount" type="text" /></td>
+            <td><input class="amount" type="number" pattern="[0-9]*" /></td>
             <td class="debt">00.00</td>
             <td><button class="remove-person-button"><i class="fa fa-times"></i></button></td>
         </tr>
