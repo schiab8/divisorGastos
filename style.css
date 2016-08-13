@@ -8,7 +8,7 @@ body {
   background-color: #e8f1f7;  
 }
 table {
-  width:80%;
+  width:90%;
   float:center;
   min-width:300px;
   margin-top:1.3rem;
@@ -17,8 +17,8 @@ table {
   margin-right:auto;
 
 }
-@media only screen and (min-width:768px){
-  table{width:50%;}
+@media only screen and (min-width:544px){
+  table{width:530px;}
 }
 tr {
   height:2rem;
